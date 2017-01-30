@@ -1,15 +1,17 @@
 
 <script>
-  /* Затемнение обложки альбома */
+
+function spawn(){
+  /* Затемнение обложки альбома 
   jq_182('#block-new105').mouseover(function() {
     jq_182(this).addClass('mask');
   });
-  /* Возврат к исходному состоянию */
+  Возврат к исходному состоянию
   jq_182('#block-new105').mouseleave(function() {
     jq_182(this).removeClass('mask');
   });
+ */
 
-  jq_182('#block-new105').on('click', function() {
     jq_182(this).lightGallery({
       dynamic: true,
       download: false,
@@ -95,6 +97,6 @@
         "src": 'http://media.lpgenerator.ru/images/91135/img0500.jpg',
         'thumb': 'http://media.lpgenerator.ru/images/91135/img0500.jpg',
  }]
-    })
-  });
+    });
+}
   </script>
